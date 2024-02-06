@@ -1,12 +1,12 @@
-import react from 'react';
-import reactDom from 'react-dom';
+import React from 'react';
+import ReactDom from 'react-dom/client';
 
-const root = reactDom.createRoot(document.getElementById('root'));
+const root = ReactDom.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <react.StrictMode>
+  <React.StrictMode>
+    <div>
       <h1>Just react</h1>
       <p>First react app</p>
-    </react.StrictMode>
-  </div>
+    </div>
+  </React.StrictMode>
 );
